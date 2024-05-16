@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background-color: rgba(99, 29, 118, 80);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 50vw;
+    padding-right: 2vw;
+}
+
+.nav-link{
+    color: #EEF1DE;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.logo {
+    padding-left: 2vw;
+}
