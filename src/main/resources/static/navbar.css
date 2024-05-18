@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 #nav {
+    position: sticky;
     background-color: rgba(99, 29, 118, 80);
     display: flex;
     flex-direction: row;
