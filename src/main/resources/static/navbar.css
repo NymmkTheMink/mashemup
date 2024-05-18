@@ -24,6 +24,12 @@ body {
     color: #EEF1DE;
     font-size: 1.5rem;
     white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+
 }
 
 .logo {
