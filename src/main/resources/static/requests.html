@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requests</title>
     <script src="navbar.js"></script>
+    <link rel="stylesheet" href="requests.css">
 </head>
 <body>
     <custom-navbar></custom-navbar>
+    <h1>Requests</h1>
+    <p>Do you have a great idea for a mash up? Fill out the form below and we will make you your very own mash up sung by your favorite characters. The mash ups also include custom music.</p>
+    <form>
+        <label for = "name">Name</label>
+        <input type = "text" id = "name" name = "name" required>
+        <label for = "email">Email</label>
+        <input type = "email" id = "email" name = "email" required>
+        <label for = "amount-songs">Number of songs</label>
+        <input type = "number" id = "amount-songs" name = "amount-songs" required>
+        <label for="additional-info">Additional Info</label>
+        <textarea id="additional-info" name="additional-info"></textarea>
+    </form>
 </body>
 </html>
