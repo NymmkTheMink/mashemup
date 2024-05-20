@@ -1,0 +1,16 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #201A23;
+}
+
+h1 {
+    color: #EEF1DE;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+p {
+    color: #EEF1DE;
+    font-size: 1.5rem;
+}
