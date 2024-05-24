@@ -6,11 +6,51 @@ body {
 
 h1 {
     color: #EEF1DE;
-    text-align: center;
     font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     color: #EEF1DE;
     font-size: 1.5rem;
+    margin: 1%;
+    padding: 0;
+}
+
+#requests-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: #561C65;
+    border-radius: 1.5rem;
+    padding: 1%;
+    margin: 1%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 5%;
+    background-color: #9E4770;
+    border-radius: 1.5rem;
+    
+}
+
+#form-description {
+    text-align: center;
+    background-color: #561C65;
+    border-radius: 1.5rem;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
