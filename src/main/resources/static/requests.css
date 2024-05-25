@@ -36,16 +36,21 @@ p {
     justify-content: center;
     align-items: center;
     padding: 1%;
-    margin: 5%;
+    margin: 0.67em;
     background-color: #9E4770;
     border-radius: 1.5rem;
     
 }
 
 #form-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #561C65;
     border-radius: 1.5rem;
+    padding: 1%;
 }
 
 #contact-info {
@@ -53,4 +58,11 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#short-line {
+    width: 20vw;
+    height: 6px;
+    background-color: #EEF1DE;
+    margin-top: 0;
 }
