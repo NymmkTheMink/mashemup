@@ -11,6 +11,11 @@ h1 {
     padding: 0;
 }
 
+h2 {
+    color: #EEF1DE; /* adjust as needed */
+    text-align: center;
+}
+
 p {
     color: #EEF1DE;
     font-size: 1.5rem;
@@ -18,16 +23,68 @@ p {
     padding: 0;
 }
 
+#requests-form input {
+    font-size: 16px; /* adjust as needed */
+    color: #201A23; /* adjust as needed */
+    background-color: #EEF1DE;
+    width: 100%; /* adjust as needed */
+    border-radius: 5px; /* adjust as needed */
+    border-style: none;
+    padding: 0.25rem;
+}
+
+#requests-form label {
+    color: #EEF1DE; /* adjust as needed */
+    padding: 0.25rem;
+    font-size: 1.25rem; /* adjust as needed */
+}
+
+#requests-form select {
+    font-size: 16px; /* adjust as needed */
+    color: #201A23; /* adjust as needed */
+    background-color: #EEF1DE;
+    width: 100%; /* adjust as needed */
+    border-radius: 5px; /* adjust as needed */
+    border-style: none;
+    padding: 0.25rem;
+}
+
+#requests-form input, #requests-form select {
+    box-sizing: border-box;
+    height: 1.75rem; /* adjust as needed */
+    line-height: 1.75rem; /* adjust as needed */
+}
+
+#requests-form textarea {
+    color: #201A23; /* adjust as needed */
+    background-color: #EEF1DE;
+    border-radius: 5px; /* adjust as needed */
+    border-style: none;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: auto;
+    resize: none;
+    flex-grow: 1;
+}
+
+#requests-form > div {
+    flex: 1;
+}
+
 #requests-form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     gap: 5%;
     background-color: #561C65;
     border-radius: 1.5rem;
     padding: 1%;
     margin: 1%;
+    width: 98%;
 }
 
 .form-container {
@@ -56,13 +113,51 @@ p {
 #contact-info {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.short-line {
+    width: 20vw;
+    height: 0.25rem;
+    background-color: #EEF1DE;
+    margin-top: 0;
+}
+
+#song-inputs{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#short-line {
-    width: 20vw;
-    height: 6px;
-    background-color: #EEF1DE;
-    margin-top: 0;
+#songs {
+    text-align: center;
+}
+
+#additional-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #561C65;
+    color: #EEF1DE;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+button:hover {
+    font-size: 1.6rem; /* Increase the font size */
+    transform: scale(1.05); /* Slightly increase the size of the button */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow */
+}
+
+.required {
+    color: red;
+    font-weight: bold;
 }
