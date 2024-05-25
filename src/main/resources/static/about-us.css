@@ -19,14 +19,14 @@ p {
 #text-container {
     border-left-color: #EEF1DE;
     border-left-style: solid;
-    border-left-width: 6px;
+    border-left-width: 0.25rem;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 #line {
     width: 20vw;
-    height: 6px;
+    height: 0.25rem;
     background-color: #EEF1DE;
     margin-top: 0;
 }
