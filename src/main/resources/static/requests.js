@@ -18,7 +18,7 @@ function generateSongInputs() {
 
         var input1 = document.createElement('input');
         input1.type = 'text';
-        input1.name = 'song' + i;
+        input1.name = 'songInputs[' + i + '].song';
         input1.required = true;
 
         var labelArtist = document.createElement('label');
@@ -30,7 +30,7 @@ function generateSongInputs() {
 
         var inputArtist = document.createElement('input');
         inputArtist.type = 'text';
-        inputArtist.name = 'artist' + i;
+        inputArtist.name = 'songInputs[' + i + '].artist';
         inputArtist.required = true;
 
         var label2 = document.createElement('label');
@@ -41,12 +41,12 @@ function generateSongInputs() {
         label2.appendChild(requiredSpan2);
 
         var select = document.createElement('select');
-        select.name = 'character' + i;
+        select.name = 'songInputs[' + i + '].characterName';
         select.required = true;
-        characters.forEach(function(character) {
+        characters.forEach(function(characterName) {
             var option = document.createElement('option');
-            option.value = character;
-            option.text = character;
+            option.value = characterName;
+            option.text = characterName;
             select.appendChild(option);
         });
         container.appendChild(label1);
@@ -57,7 +57,9 @@ function generateSongInputs() {
         container.appendChild(select);
     }
 }
+
 document.querySelector('#submit-request').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the form from being submitted in the traditional way
     var form = document.querySelector('#requests-form');
 
     // Check if the form is valid
@@ -65,9 +67,25 @@ document.querySelector('#submit-request').addEventListener('click', function(eve
         // If the form is not valid, display the validation message
         form.reportValidity();
     } else {
-        // If the form is valid, display the confirmation message and submit the form
         alert('Form submitted successfully!');
-        form.submit();
+        
+        // Use Fetch API to submit the form data
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form)
+        }).then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Error: ' + response.statusText);
+            }
+        }).then(data => {
+            console.log('Success:', data);
+        }).catch((error) => {
+            console.error('Error:', error);
+        }).finally(() => {
+            form.reset(); // Reset the form
+        });
     }
 });
 

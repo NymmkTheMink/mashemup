@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,23 +16,23 @@
             <p>Do you have a great idea for a mash up? Fill out the form below and we will make you your very own mash up sung by your favorite characters. The mash ups also include custom music.</p>
         </div>
 
-        <form id="requests-form" th:action="@{/submitRequest}" th:object="${request}" method="post">
+        <form id="requests-form" action="/submitRequest/submit" method="post">
             <div id="contact-info">
                 <h2>Contact Information</h2>
                 <label for = "name">Name <span class="required">*</span></label>
-                <input type = "text" id = "name" name = "name" th:field="*{name}" required>
+                <input type = "text" id = "name" name = "name" required>
                 <label for = "email">Email <span class="required">*</span></label>
-                <input type = "email" id = "email" name = "email" th:field="*{email}" required>
+                <input type = "email" id = "email" name = "email" required>
             </div>
             <div id="songs">
                 <h2>Songs</h2>
                 <label for = "amount-songs">Number of songs (Max 3) <span class="required">*</span></label>
-                <input type = "number" id = "amount-songs" name = "amount-songs" th:field="*{amountSongs}" required onchange="generateSongInputs()" min="1" max="3" value="1">
+                <input type = "number" id = "amount-songs" name = "amountSongs" required onchange="generateSongInputs()" min="1" max="3" value="1">
             <div id="song-inputs"></div>
             </div>
             <div id="additional-info">
                 <h2>Additional Info</h2>
-                <textarea id="additional-info" name="additional-info" th:field="*{additionalInfo}"></textarea>
+                <textarea id="additional-info" name="additionalInfo" maxlength="2000"></textarea>
             </div>
         </form>
         <button type="submit" id="submit-request">Submit</button>

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/requests")
+@RequestMapping("/submitRequest")
 public class RequestController {
 
     private final RequestRepository requestRepository;
@@ -19,7 +19,7 @@ public class RequestController {
     }
 
     @PostMapping("/submit")
-    public ResponseEntity<String> submitRequest(@RequestBody Request request) {
+    public ResponseEntity<String> submitRequest(@ModelAttribute Request request) {
         requestRepository.saveRequest(request);
         return new ResponseEntity<>("Request submitted successfully", HttpStatus.CREATED);
     }

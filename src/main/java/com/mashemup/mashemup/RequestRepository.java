@@ -22,8 +22,8 @@ public class RequestRepository {
 
         // Save each SongInput to the song_input table
         for (SongInput songInput : request.getSongInputs()) {
-            sql = "INSERT INTO song_input (song, artist, character, request_id) VALUES(?,?,?,?)";
-            db.update(sql, songInput.getSong(), songInput.getArtist(), songInput.getCharacter(), requestId);
+            sql = "INSERT INTO song_input (song, artist, characterName, requestId) VALUES(?,?,?,?)"; // changed from character
+            db.update(sql, songInput.getSong(), songInput.getArtist(), songInput.getCharacterName(), requestId); // changed from getCharacter
         }
     }
 
