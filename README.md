@@ -3,3 +3,4 @@
 ## Instructions
 Download the file for the music video [here](https://drive.google.com/file/d/1Jj-9WKGNk47B75hzEhVNGTHpdiAgUJIr/view?usp=sharing). 
 Add the file for the music video in the static folder.
+You can find the static folder in src/main/resources.
