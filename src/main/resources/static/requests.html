@@ -6,36 +6,39 @@
     <title>Requests</title>
     <script src="navbar.js"></script>
     <link rel="stylesheet" href="requests.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="abyssinica-sil-regular">
     <custom-navbar></custom-navbar>
     <div class="form-container">
         <div id="form-description">
-            <h1>Requests</h1>
+            <h1 class="abyssinica-sil-regular">Requests</h1>
             <div class="short-line"></div>
-            <p>Do you have a great idea for a mash up? Fill out the form below and we will make you your very own mash up sung by your favorite characters. The mash ups also include custom music.</p>
+            <p class="abyssinica-sil-regular">Do you have a great idea for a mash up? Fill out the form below and we will make you your very own mash up sung by your favorite characters. The mash ups also include custom music.</p>
         </div>
 
         <form id="requests-form" action="/submitRequest/submit" method="post">
             <div id="contact-info">
-                <h2>Contact Information</h2>
-                <label for = "name">Name <span class="required">*</span></label>
-                <input type = "text" id = "name" name = "name" required>
-                <label for = "email">Email <span class="required">*</span></label>
-                <input type = "email" id = "email" name = "email" required>
+                <h2 class="abyssinica-sil-regular">Contact Information</h2>
+                <label for="name" class="abyssinica-sil-regular">Name <span class="abyssinica-sil-regular required">*</span></label>
+                <input type="text" id="name" name="name" required class="abyssinica-sil-regular">
+                <label for="email" class="abyssinica-sil-regular">Email <span class="abyssinica-sil-regular required">*</span></label>
+                <input type="email" id="email" name="email" required class="abyssinica-sil-regular">
             </div>
             <div id="songs">
-                <h2>Songs</h2>
-                <label for = "amount-songs">Number of songs (Max 3) <span class="required">*</span></label>
-                <input type = "number" id = "amount-songs" name = "amountSongs" required onchange="generateSongInputs()" min="1" max="3" value="1">
+                <h2 class="abyssinica-sil-regular">Songs</h2>
+                <label for="amount-songs" class="abyssinica-sil-regular">Number of songs (Max 3) <span class="abyssinica-sil-regular required">*</span></label>
+                <input type="number" id="amount-songs" name="amountSongs" required onchange="generateSongInputs()" min="1" max="3" value="1" class="abyssinica-sil-regular">
             <div id="song-inputs"></div>
             </div>
             <div id="additional-info">
-                <h2>Additional Info</h2>
-                <textarea id="additional-info" name="additionalInfo" maxlength="2000"></textarea>
+                <h2 class="abyssinica-sil-regular">Additional Info</h2>
+                <textarea id="additional-info" name="additionalInfo" maxlength="2000" class="abyssinica-sil-regular"></textarea>
             </div>
         </form>
-        <button type="submit" id="submit-request">Submit</button>
+        <button type="submit" id="submit-request" class="abyssinica-sil-regular">Submit</button>
     </div>  
     <script src="requests.js"></script>
 </body>

@@ -67,7 +67,7 @@ document.querySelector('#submit-request').addEventListener('click', function(eve
         // If the form is not valid, display the validation message
         form.reportValidity();
     } else {
-        alert('Form submitted successfully!');
+        alert('Thanks for sending a request!');
         
         // Use Fetch API to submit the form data
         fetch(form.action, {

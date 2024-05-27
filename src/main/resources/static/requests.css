@@ -161,3 +161,10 @@ button:hover {
     color: red;
     font-weight: bold;
 }
+
+.abyssinica-sil-regular {
+    font-family: "Abyssinica SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+

@@ -45,3 +45,9 @@ p {
     align-items: center;
     margin-bottom: 5%;
 }
+
+.abyssinica-sil-regular {
+    font-family: "Abyssinica SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
