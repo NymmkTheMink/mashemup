@@ -12,7 +12,7 @@ Navigate to the mashemup folder in the terminal.
 Run the docker compose up --build command you might have to use sudo. 
 In docker desktop navigate to the Volumes tab.
 Find the volume named mashemup_db_data and press on the import button (a circle with and downward pointing arrow in the middle).
-Download the file with the data here.
+Download the file with the data [here](https://drive.google.com/file/d/1s6Rcivhqvtn9YP5gCKgNUNquQx_hutCN/view?usp=sharing).
 Choose local file and then press the select file button. 
 Find the correct the data file and select it.
 Finally press import. 
